@@ -55,15 +55,11 @@ function europeana_search_default_page_manager_pages() {
     $pane = new stdClass;
     $pane->pid = 'new-1';
     $pane->panel = 'left';
-    $pane->type = 'result';
-    $pane->subtype = 'result';
+    $pane->type = 'search';
+    $pane->subtype = 'europeana_search_widget';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array(
-      'context' => 'argument_string_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
+    $pane->configuration = array();
     $pane->cache = array();
     $pane->style = array();
     $pane->css = array();
@@ -82,10 +78,12 @@ function europeana_search_default_page_manager_pages() {
       'context' => array(
         0 => 'empty',
         1 => 'empty',
-        2 => 'argument_string_1',
+        2 => 'empty',
       ),
       'override_title' => 0,
       'override_title_text' => '',
+      'campaign_count' => 3,
+      'campaign_offset' => 0,
     );
     $pane->cache = array();
     $pane->style = array();
