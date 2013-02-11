@@ -16,8 +16,8 @@ function europeana_search_default_page_manager_pages() {
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Europeana',
-    'name' => 'navigation',
-    'weight' => '0',
+    'name' => 'primary-links',
+    'weight' => '50',
     'parent' => array(
       'type' => 'none',
       'title' => '',
