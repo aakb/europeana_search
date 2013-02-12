@@ -70,20 +70,24 @@ function europeana_search_default_page_manager_pages() {
     $pane = new stdClass;
     $pane->pid = 'new-2';
     $pane->panel = 'right';
-    $pane->type = 'relevant';
-    $pane->subtype = 'relevant_campaigns';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'context' => array(
-        0 => 'empty',
-        1 => 'empty',
-        2 => 'empty',
-      ),
-      'override_title' => 0,
-      'override_title_text' => '',
-      'campaign_count' => 3,
-      'campaign_offset' => 0,
+      'admin_title' => '',
+      'title' => 'Gå på opdagelse i Europas kultursamlinger',
+      'body' => '<br/>
+<p>Europeana er en database for europæisk kulturarv. Både professionelle og privatpersoner fra hele Europa bidrager til det massive arkiv .</p>
+
+<p>Det er meget nemt at søge i Europeanas millioner af emner.</p>
+
+<p>Bestem hvem, hvad, hvor eller hvilken tid, du ønsker at søge og skriv ordene i Europeanas søgefelt.</p>
+
+<p>Læs mere om Europeana her: <a href="http://www.europeana.eu/portal/">http://www.europeana.eu/portal/</a></p>
+<p><a href="http://www.europeana.eu/portal/"><img src="http://www.europeana.eu/portal/sp/img/europeana-logo-da.png"></a></p>',
+      'format' => '3',
+      'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array();
